@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "828A7E2716132EE0002D1F39"
-               BuildableName = "ioslayout.app"
-               BlueprintName = "ioslayout"
-               ReferencedContainer = "container:ioslayout.xcodeproj">
+               BuildableName = "KALayoutHelper.app"
+               BlueprintName = "KALayoutHelper"
+               ReferencedContainer = "container:KALayoutHelper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "828A7E2716132EE0002D1F39"
-            BuildableName = "ioslayout.app"
-            BlueprintName = "ioslayout"
-            ReferencedContainer = "container:ioslayout.xcodeproj">
+            BuildableName = "KALayoutHelper.app"
+            BlueprintName = "KALayoutHelper"
+            ReferencedContainer = "container:KALayoutHelper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "828A7E2716132EE0002D1F39"
-            BuildableName = "ioslayout.app"
-            BlueprintName = "ioslayout"
-            ReferencedContainer = "container:ioslayout.xcodeproj">
+            BuildableName = "KALayoutHelper.app"
+            BlueprintName = "KALayoutHelper"
+            ReferencedContainer = "container:KALayoutHelper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "828A7E2716132EE0002D1F39"
-            BuildableName = "ioslayout.app"
-            BlueprintName = "ioslayout"
-            ReferencedContainer = "container:ioslayout.xcodeproj">
+            BuildableName = "KALayoutHelper.app"
+            BlueprintName = "KALayoutHelper"
+            ReferencedContainer = "container:KALayoutHelper.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

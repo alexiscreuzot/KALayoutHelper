@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIVerticalLayout.h"
-#import "UIHorizontalLayout.h"
+#import "KALayoutHelper.h"
 
 @interface ViewController ()
 @property (strong,nonatomic)IBOutlet UIScrollView * scrollView;

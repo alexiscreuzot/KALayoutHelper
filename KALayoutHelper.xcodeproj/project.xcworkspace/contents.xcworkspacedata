@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ioslayout.xcodeproj">
+      location = "self:KALayoutHelper.xcodeproj">
    </FileRef>
 </Workspace>
