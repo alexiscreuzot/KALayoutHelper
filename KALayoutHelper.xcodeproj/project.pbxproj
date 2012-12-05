@@ -11,16 +11,15 @@
 		828A7E2D16132EE0002D1F39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828A7E2C16132EE0002D1F39 /* UIKit.framework */; };
 		828A7E2F16132EE0002D1F39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828A7E2E16132EE0002D1F39 /* Foundation.framework */; };
 		828A7E3116132EE0002D1F39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828A7E3016132EE0002D1F39 /* CoreGraphics.framework */; };
-		82A8EB06166F563400E560E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB03166F563400E560E9 /* Default-568h@2x.png */; };
-		82A8EB07166F563400E560E9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB04166F563400E560E9 /* Default.png */; };
-		82A8EB08166F563400E560E9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB05166F563400E560E9 /* Default@2x.png */; };
-		82A8EB12166F56B200E560E9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB10166F56B200E560E9 /* InfoPlist.strings */; };
-		82A8EB18166F56D100E560E9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB16166F56D100E560E9 /* ViewController.xib */; };
 		82A8EB1D166F570A00E560E9 /* UIHorizontalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EB1A166F570A00E560E9 /* UIHorizontalLayout.m */; };
 		82A8EB1E166F570A00E560E9 /* UIVerticalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EB1C166F570A00E560E9 /* UIVerticalLayout.m */; };
-		82A8EB1F166F571B00E560E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EAF4166F560200E560E9 /* AppDelegate.m */; };
-		82A8EB20166F571D00E560E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EB14166F56C900E560E9 /* ViewController.m */; };
-		82A8EB21166F573800E560E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EAFE166F561E00E560E9 /* main.m */; };
+		82A8EB28166F59D100E560E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EB27166F59D100E560E9 /* AppDelegate.m */; };
+		82A8EB2E166F59F000E560E9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB2C166F59F000E560E9 /* ViewController.xib */; };
+		82A8EB34166F5A3900E560E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EB32166F5A3900E560E9 /* main.m */; };
+		82A8EB38166F5A4C00E560E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB35166F5A4C00E560E9 /* Default-568h@2x.png */; };
+		82A8EB39166F5A4C00E560E9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB36166F5A4C00E560E9 /* Default.png */; };
+		82A8EB3A166F5A4C00E560E9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82A8EB37166F5A4C00E560E9 /* Default@2x.png */; };
+		82A8EB3B166F5AE700E560E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A8EB2B166F59E700E560E9 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,23 +28,22 @@
 		828A7E2C16132EE0002D1F39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		828A7E2E16132EE0002D1F39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		828A7E3016132EE0002D1F39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		82A8EAF3166F560200E560E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KALayoutHelper/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		82A8EAF4166F560200E560E9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KALayoutHelper/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		82A8EAF5166F560200E560E9 /* KALayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KALayoutHelper.h; path = KALayoutHelper/KALayoutHelper.h; sourceTree = SOURCE_ROOT; };
-		82A8EAFC166F561E00E560E9 /* KALayoutHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "KALayoutHelper-Info.plist"; path = "KALayoutHelper/KALayoutHelper-Info.plist"; sourceTree = SOURCE_ROOT; };
-		82A8EAFD166F561E00E560E9 /* KALayoutHelper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KALayoutHelper-Prefix.pch"; path = "KALayoutHelper/KALayoutHelper-Prefix.pch"; sourceTree = SOURCE_ROOT; };
-		82A8EAFE166F561E00E560E9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KALayoutHelper/main.m; sourceTree = SOURCE_ROOT; };
-		82A8EB03166F563400E560E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "KALayoutHelper/Default-568h@2x.png"; sourceTree = "<group>"; };
-		82A8EB04166F563400E560E9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = KALayoutHelper/Default.png; sourceTree = "<group>"; };
-		82A8EB05166F563400E560E9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "KALayoutHelper/Default@2x.png"; sourceTree = "<group>"; };
-		82A8EB11166F56B200E560E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = KALayoutHelper/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
-		82A8EB13166F56C900E560E9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = KALayoutHelper/ViewController.h; sourceTree = SOURCE_ROOT; };
-		82A8EB14166F56C900E560E9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = KALayoutHelper/ViewController.m; sourceTree = SOURCE_ROOT; };
-		82A8EB17166F56D100E560E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = KALayoutHelper/en.lproj/ViewController.xib; sourceTree = SOURCE_ROOT; };
 		82A8EB19166F570A00E560E9 /* UIHorizontalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIHorizontalLayout.h; path = KALayoutHelper/UIHorizontalLayout.h; sourceTree = SOURCE_ROOT; };
 		82A8EB1A166F570A00E560E9 /* UIHorizontalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIHorizontalLayout.m; path = KALayoutHelper/UIHorizontalLayout.m; sourceTree = SOURCE_ROOT; };
 		82A8EB1B166F570A00E560E9 /* UIVerticalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIVerticalLayout.h; path = KALayoutHelper/UIVerticalLayout.h; sourceTree = SOURCE_ROOT; };
 		82A8EB1C166F570A00E560E9 /* UIVerticalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIVerticalLayout.m; path = KALayoutHelper/UIVerticalLayout.m; sourceTree = SOURCE_ROOT; };
+		82A8EB26166F59D100E560E9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = KALayoutHelper/Demo/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		82A8EB27166F59D100E560E9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = KALayoutHelper/Demo/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		82A8EB2A166F59E700E560E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = KALayoutHelper/Demo/ViewController.h; sourceTree = SOURCE_ROOT; };
+		82A8EB2B166F59E700E560E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = KALayoutHelper/Demo/ViewController.m; sourceTree = SOURCE_ROOT; };
+		82A8EB2D166F59F000E560E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = KALayoutHelper/Demo/en.lproj/ViewController.xib; sourceTree = SOURCE_ROOT; };
+		82A8EB30166F5A3900E560E9 /* KALayoutHelper-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "KALayoutHelper-Info.plist"; path = "KALayoutHelper/Demo/KALayoutHelper-Info.plist"; sourceTree = SOURCE_ROOT; };
+		82A8EB31166F5A3900E560E9 /* KALayoutHelper-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KALayoutHelper-Prefix.pch"; path = "KALayoutHelper/Demo/KALayoutHelper-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		82A8EB32166F5A3900E560E9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = KALayoutHelper/Demo/main.m; sourceTree = SOURCE_ROOT; };
+		82A8EB35166F5A4C00E560E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "KALayoutHelper/Demo/Default-568h@2x.png"; sourceTree = "<group>"; };
+		82A8EB36166F5A4C00E560E9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = KALayoutHelper/Demo/Default.png; sourceTree = "<group>"; };
+		82A8EB37166F5A4C00E560E9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "KALayoutHelper/Demo/Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +63,9 @@
 		82757E9716132F850046C958 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				82A8EB03166F563400E560E9 /* Default-568h@2x.png */,
-				82A8EB04166F563400E560E9 /* Default.png */,
-				82A8EB05166F563400E560E9 /* Default@2x.png */,
+				82A8EB35166F5A4C00E560E9 /* Default-568h@2x.png */,
+				82A8EB36166F5A4C00E560E9 /* Default.png */,
+				82A8EB37166F5A4C00E560E9 /* Default@2x.png */,
 				82757E9B1613370B0046C958 /* star.png */,
 			);
 			name = Resources;
@@ -77,7 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				828A7E3216132EE0002D1F39 /* KALayoutHelper */,
-				82757E9716132F850046C958 /* Resources */,
+				82A8EB2F166F59FA00E560E9 /* Demo */,
 				828A7E2B16132EE0002D1F39 /* Frameworks */,
 				828A7E2916132EE0002D1F39 /* Products */,
 			);
@@ -104,12 +102,11 @@
 		828A7E3216132EE0002D1F39 /* KALayoutHelper */ = {
 			isa = PBXGroup;
 			children = (
-				82A8EAF3166F560200E560E9 /* AppDelegate.h */,
-				82A8EAF4166F560200E560E9 /* AppDelegate.m */,
 				82A8EAF5166F560200E560E9 /* KALayoutHelper.h */,
-				828A7E4F16132EF1002D1F39 /* Controllers */,
-				828A7E5016132F00002D1F39 /* Helpers */,
-				828A7E3316132EE0002D1F39 /* Supporting Files */,
+				82A8EB19166F570A00E560E9 /* UIHorizontalLayout.h */,
+				82A8EB1A166F570A00E560E9 /* UIHorizontalLayout.m */,
+				82A8EB1B166F570A00E560E9 /* UIVerticalLayout.h */,
+				82A8EB1C166F570A00E560E9 /* UIVerticalLayout.m */,
 			);
 			name = KALayoutHelper;
 			path = ioslayout;
@@ -118,33 +115,35 @@
 		828A7E3316132EE0002D1F39 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				82A8EAFC166F561E00E560E9 /* KALayoutHelper-Info.plist */,
-				82A8EAFD166F561E00E560E9 /* KALayoutHelper-Prefix.pch */,
-				82A8EAFE166F561E00E560E9 /* main.m */,
-				82A8EB10166F56B200E560E9 /* InfoPlist.strings */,
+				82A8EB30166F5A3900E560E9 /* KALayoutHelper-Info.plist */,
+				82A8EB31166F5A3900E560E9 /* KALayoutHelper-Prefix.pch */,
+				82A8EB32166F5A3900E560E9 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = ioslayout;
 			sourceTree = "<group>";
 		};
 		828A7E4F16132EF1002D1F39 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				82A8EB13166F56C900E560E9 /* ViewController.h */,
-				82A8EB14166F56C900E560E9 /* ViewController.m */,
-				82A8EB16166F56D100E560E9 /* ViewController.xib */,
+				82A8EB2A166F59E700E560E9 /* ViewController.h */,
+				82A8EB2B166F59E700E560E9 /* ViewController.m */,
+				82A8EB2C166F59F000E560E9 /* ViewController.xib */,
 			);
 			name = Controllers;
+			path = ioslayout;
 			sourceTree = "<group>";
 		};
-		828A7E5016132F00002D1F39 /* Helpers */ = {
+		82A8EB2F166F59FA00E560E9 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				82A8EB19166F570A00E560E9 /* UIHorizontalLayout.h */,
-				82A8EB1A166F570A00E560E9 /* UIHorizontalLayout.m */,
-				82A8EB1B166F570A00E560E9 /* UIVerticalLayout.h */,
-				82A8EB1C166F570A00E560E9 /* UIVerticalLayout.m */,
+				82A8EB26166F59D100E560E9 /* AppDelegate.h */,
+				82A8EB27166F59D100E560E9 /* AppDelegate.m */,
+				828A7E4F16132EF1002D1F39 /* Controllers */,
+				82757E9716132F850046C958 /* Resources */,
+				828A7E3316132EE0002D1F39 /* Supporting Files */,
 			);
-			name = Helpers;
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				82757E9C1613370B0046C958 /* star.png in Resources */,
-				82A8EB06166F563400E560E9 /* Default-568h@2x.png in Resources */,
-				82A8EB07166F563400E560E9 /* Default.png in Resources */,
-				82A8EB08166F563400E560E9 /* Default@2x.png in Resources */,
-				82A8EB12166F56B200E560E9 /* InfoPlist.strings in Resources */,
-				82A8EB18166F56D100E560E9 /* ViewController.xib in Resources */,
+				82A8EB2E166F59F000E560E9 /* ViewController.xib in Resources */,
+				82A8EB38166F5A4C00E560E9 /* Default-568h@2x.png in Resources */,
+				82A8EB39166F5A4C00E560E9 /* Default.png in Resources */,
+				82A8EB3A166F5A4C00E560E9 /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,27 +214,19 @@
 			files = (
 				82A8EB1D166F570A00E560E9 /* UIHorizontalLayout.m in Sources */,
 				82A8EB1E166F570A00E560E9 /* UIVerticalLayout.m in Sources */,
-				82A8EB20166F571D00E560E9 /* ViewController.m in Sources */,
-				82A8EB21166F573800E560E9 /* main.m in Sources */,
-				82A8EB1F166F571B00E560E9 /* AppDelegate.m in Sources */,
+				82A8EB28166F59D100E560E9 /* AppDelegate.m in Sources */,
+				82A8EB3B166F5AE700E560E9 /* ViewController.m in Sources */,
+				82A8EB34166F5A3900E560E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		82A8EB10166F56B200E560E9 /* InfoPlist.strings */ = {
+		82A8EB2C166F59F000E560E9 /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				82A8EB11166F56B200E560E9 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		82A8EB16166F56D100E560E9 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82A8EB17166F56D100E560E9 /* en */,
+				82A8EB2D166F59F000E560E9 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
@@ -297,8 +287,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KALayoutHelper/KALayoutHelper-Prefix.pch";
-				INFOPLIST_FILE = "KALayoutHelper/KALayoutHelper-Info.plist";
+				GCC_PREFIX_HEADER = "KALayoutHelper/Demo/KALayoutHelper-Prefix.pch";
+				INFOPLIST_FILE = "KALayoutHelper/Demo/KALayoutHelper-Info.plist";
 				PRODUCT_NAME = KALayoutHelper;
 				WRAPPER_EXTENSION = app;
 			};
@@ -308,8 +298,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KALayoutHelper/KALayoutHelper-Prefix.pch";
-				INFOPLIST_FILE = "KALayoutHelper/KALayoutHelper-Info.plist";
+				GCC_PREFIX_HEADER = "KALayoutHelper/Demo/KALayoutHelper-Prefix.pch";
+				INFOPLIST_FILE = "KALayoutHelper/Demo/KALayoutHelper-Info.plist";
 				PRODUCT_NAME = KALayoutHelper;
 				WRAPPER_EXTENSION = app;
 			};

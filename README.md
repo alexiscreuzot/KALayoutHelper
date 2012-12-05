@@ -1,4 +1,4 @@
-# iOS Layout Helper
+# KALAyoutHelper (formerly iOS Layout Helper)
 
 A work in progress aiming to add a layout mecanism (similar to android) to views in iOS.
 2 layouts helper are offered : UIVerticalLayout and UIHorizontalLayout.
@@ -6,12 +6,13 @@ A work in progress aiming to add a layout mecanism (similar to android) to views
 ## How to install
 
 Simply copy : 
+ * KALayoutHelper.h
  * UIVerticalLayout.h
  * UIVerticalLayout.m
  * UIHorizontalLayout.h
  * UIHorizontalLayout.m
 
-into your project folder
+into your project folder and import KALayoutHelper.h
 
 ## How to use
 
