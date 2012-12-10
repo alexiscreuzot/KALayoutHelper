@@ -57,26 +57,26 @@
     UIHorizontalLayout * horizontalLayout = [[UIHorizontalLayout alloc] init];
     
     // TextViews
-    UITextView * textH1 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,140,0)];
+    UITextView * textH1 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,145,0)];
     textH1.text = @"Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
     [horizontalLayout addSubview:textH1 withPadding:0];
     
-    UITextView * textH2 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,140,0)];
+    UITextView * textH2 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,145,0)];
     textH2.text = @"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
     [horizontalLayout addSubview:textH2 withPadding:10];
     
     UIHorizontalLayout * horizontalLayout2 = [[UIHorizontalLayout alloc] init];
     
     // TextViews
-    UITextView * textH3 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,90,0)];
+    UITextView * textH3 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
     textH3.text = @"Iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
     [horizontalLayout2 addSubview:textH3 withPadding:0];
     
-    UITextView * textH4 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,90,0)];
+    UITextView * textH4 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
     textH4.text = @"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque laudantium, totam inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
     [horizontalLayout2 addSubview:textH4 withPadding:10];
     
-    UITextView * textH5 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,90,0)];
+    UITextView * textH5 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
     textH5.text = @"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque laudantium, totam inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
     [horizontalLayout2 addSubview:textH5 withPadding:10];
     
