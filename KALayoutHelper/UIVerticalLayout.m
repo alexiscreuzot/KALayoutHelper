@@ -48,7 +48,6 @@
     // Add view to layout with given padding
     CGRect frame = view.frame;
     frame.origin.y = curY + padding;
-    frame.size.width = self.frame.size.width;
     view.frame = frame;
     [view sizeToFit];
     [super addSubview:view];
