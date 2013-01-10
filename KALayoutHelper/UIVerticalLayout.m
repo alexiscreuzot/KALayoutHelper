@@ -27,6 +27,8 @@
 
 - (void)addSubview:(UIView *)view withPadding:(int)padding
 {
+    view.backgroundColor = [UIColor clearColor];
+    
     // Let labels take as much line as they need
     if ([view isKindOfClass:[UILabel class]]){
         UILabel * label = (UILabel *) view;
