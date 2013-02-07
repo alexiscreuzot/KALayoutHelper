@@ -14,6 +14,9 @@ Simply copy :
 
 into your project folder and import KALayoutHelper.h
 
+or use cocoapod with this line :
+    pod 'KALayoutHelper', :git => 'https://github.com/kirualex/KALayoutHelper.git'
+
 ## How to use
 
 In order to display data vertically, simply use a UIVerticalLayout this way :
@@ -30,7 +33,7 @@ In order to display data vertically, simply use a UIVerticalLayout this way :
 In order to display data Horizontally, simply use a UIHorizontalLayout this way :
 
     // Init vertical layout (height at 0 will be updated automatically)
-    UIHorizontalLayout * verticalLayout = [[UIHorizontalLayout alloc] initWithFrame:CGRectMake(10, 0, 300, 0)];
+    UIHorizontalLayout * horizontalLayout = [[UIHorizontalLayout alloc] initWithFrame:CGRectMake(10, 0, 300, 0)];
 
     [horizontalLayout addSubview:view1 withPadding:0]; // 0px padding left
     [horizontalLayout addSubview:view2 withPadding:10]; // 10px padding left

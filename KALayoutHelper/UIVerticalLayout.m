@@ -55,7 +55,13 @@
         frame.size.width = self.frame.size.width;
     }
     view.frame = frame;
-    [view sizeToFit];
+    
+    if([view isKindOfClass:[UILabel class]] ||
+       [view isKindOfClass:[UITextView class]]){
+        [view sizeToFit];
+    }
+
+
     [super addSubview:view];
     curY += (view.frame.size.height + padding);
     

@@ -50,7 +50,12 @@
     CGRect frame = view.frame;
     frame.origin.x = curX + padding;
     view.frame = frame;
-    [view sizeToFit];
+    
+    if([view isKindOfClass:[UILabel class]] ||
+       [view isKindOfClass:[UITextView class]]){
+        [view sizeToFit];
+    }
+
     [super addSubview:view];
     curX += (view.frame.size.width + padding);
     if(view.frame.size.height > curY){
