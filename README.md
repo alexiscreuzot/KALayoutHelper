@@ -15,6 +15,9 @@ Simply copy :
 
 into your project folder and import KALayoutHelper.h
 
+or use cocoapod with this line :
+    pod 'KALayoutHelper', :git => 'https://github.com/kirualex/KALayoutHelper.git'
+
 ## How to use a vertical layout
 
 ### Old way
@@ -41,6 +44,8 @@ into your project folder and import KALayoutHelper.h
     [view addSubview:verticalLayout];
 
 ## How to use an horizontal layout
+
+### Old way
 
 In order to display data Horizontally, simply use a UIHorizontalLayout this way :
 
