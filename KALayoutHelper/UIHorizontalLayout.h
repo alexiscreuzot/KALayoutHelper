@@ -6,12 +6,15 @@
 //  Copyright (c) 2012 Mobizel. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
+typedef void (^ContentBlock)();
 
 @interface UIHorizontalLayout : UIView
+
 @property (nonatomic) int bottom;
 @property (nonatomic) int right;
 
+- (void)setContentBlock:(ContentBlock)contentBlock;
 - (void)addSubview:(UIView *)view withPadding:(int)padding;
 
 @end

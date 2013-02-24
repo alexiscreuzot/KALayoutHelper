@@ -25,6 +25,11 @@
     return self;
 }
 
+- (void) setContentBlock:(ContentBlock)contentBlock
+{
+    contentBlock();
+}
+
 - (void)addSubview:(UIView *)view withPadding:(int)padding
 {
     view.backgroundColor = [UIColor clearColor];
@@ -58,8 +63,6 @@
     [view sizeToFit];
     [super addSubview:view];
     curY += (view.frame.size.height + padding);
-    
-    
     
     // Adapt layout frame to fit its elements
     frame = self.frame;
