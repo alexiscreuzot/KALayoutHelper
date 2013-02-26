@@ -6,13 +6,11 @@
 //  Copyright (c) 2012 Mobizel. All rights reserved.
 //
 
-typedef void (^ContentBlock)();
-
 @interface UIVerticalLayout : UIView
 
 @property (nonatomic) int bottom;
 @property (nonatomic) int right;
 
-- (void)setContentBlock:(ContentBlock)contentBlock;
+- (void)setContentBlock:(void(^)())contentBlock;
 - (void)addSubview:(UIView *)view withPadding:(int)padding;
 @end

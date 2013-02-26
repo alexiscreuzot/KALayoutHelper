@@ -25,15 +25,13 @@
     return self;
 }
 
-- (void) setContentBlock:(ContentBlock)contentBlock
+- (void) setContentBlock:(void(^)())contentBlock
 {
     contentBlock();
 }
 
 - (void)addSubview:(UIView *)view withPadding:(int)padding
-{
-    view.backgroundColor = [UIColor clearColor];
-    
+{    
     // Let labels take as much line as they need
     if ([view isKindOfClass:[UILabel class]]){
         UILabel * label = (UILabel *) view;

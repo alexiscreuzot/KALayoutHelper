@@ -43,9 +43,8 @@
         [blockVertical addSubview:textV2 withPadding:10];
         
         // Image
-        UIImageView * imageView = [[UIImageView alloc] init];
-        imageView.image = [UIImage imageNamed:@"star"];
-        int centerX = (verticalLayout.frame.size.width - imageView.image.size.width)/2;
+        UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"star"]];
+        int centerX = (blockVertical.frame.size.width - imageView.image.size.width)/2;
         imageView.center = CGPointMake(centerX, 0);
         [blockVertical addSubview:imageView withPadding:10];
         
@@ -59,14 +58,17 @@
         // Init horizontal layout (frame will be set automatically)
         // You will need to set the correct sizes for subview width though
         UIHorizontalLayout * horizontalLayout = [[UIHorizontalLayout alloc] init];
+        [horizontalLayout setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:1]];
         __block UIHorizontalLayout * blockHorizontal = horizontalLayout;
         [horizontalLayout setContentBlock:^{
             // TextViews
             UITextView * textH1 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,145,0)];
+            [textH1 setBackgroundColor:[UIColor clearColor]];
             textH1.text = @"Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
             [blockHorizontal addSubview:textH1 withPadding:0];
             
             UITextView * textH2 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,145,0)];
+            [textH2 setBackgroundColor:[UIColor clearColor]];
             textH2.text = @"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
             [blockHorizontal addSubview:textH2 withPadding:10];
         }];

@@ -7,14 +7,12 @@
 //
 
 
-typedef void (^ContentBlock)();
-
 @interface UIHorizontalLayout : UIView
 
 @property (nonatomic) int bottom;
 @property (nonatomic) int right;
 
-- (void)setContentBlock:(ContentBlock)contentBlock;
+- (void)setContentBlock:(void(^)())contentBlock;
 - (void)addSubview:(UIView *)view withPadding:(int)padding;
 
 @end

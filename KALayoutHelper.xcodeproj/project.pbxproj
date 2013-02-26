@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82757E9C1613370B0046C958 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 82757E9B1613370B0046C958 /* star.png */; };
+		820377E216DCF81600CABAFA /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 82757E9B1613370B0046C958 /* star.png */; };
 		828A7E2D16132EE0002D1F39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828A7E2C16132EE0002D1F39 /* UIKit.framework */; };
 		828A7E2F16132EE0002D1F39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828A7E2E16132EE0002D1F39 /* Foundation.framework */; };
 		828A7E3116132EE0002D1F39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 828A7E3016132EE0002D1F39 /* CoreGraphics.framework */; };
@@ -197,11 +197,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82757E9C1613370B0046C958 /* star.png in Resources */,
 				82A8EB2E166F59F000E560E9 /* ViewController.xib in Resources */,
 				82A8EB38166F5A4C00E560E9 /* Default-568h@2x.png in Resources */,
 				82A8EB39166F5A4C00E560E9 /* Default.png in Resources */,
 				82A8EB3A166F5A4C00E560E9 /* Default@2x.png in Resources */,
+				820377E216DCF81600CABAFA /* star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
