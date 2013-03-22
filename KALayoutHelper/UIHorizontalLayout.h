@@ -6,6 +6,12 @@
 //  Copyright (c) 2012 Mobizel. All rights reserved.
 //
 
+typedef NS_ENUM(NSInteger, KALayoutVerticalAlignment) {
+    KALayoutVerticalAlignmentTop,
+    KALayoutVerticalAlignmentCenter,
+    KALayoutVerticalAlignmentBottom,
+    KALayoutVerticalAlignmentNone
+};
 
 @interface UIHorizontalLayout : UIView
 
@@ -14,5 +20,6 @@
 
 - (void)setContentBlock:(void(^)())contentBlock;
 - (void)addSubview:(UIView *)view withPadding:(int)padding;
+- (void)addSubview:(UIView *)view withPadding:(int)padding andVerticalAlignment:(KALayoutVerticalAlignment) verticalAlignment;
 
 @end

@@ -23,7 +23,6 @@
     // Init vertical layout (height at 0 will be updated automatically)
     UIVerticalLayout * verticalLayout = [[UIVerticalLayout alloc] initWithFrame:CGRectMake(10, 0, 300, 0)];
     
-    
     __block UIVerticalLayout * blockVertical = verticalLayout;
     [verticalLayout setContentBlock:^{
         
@@ -44,9 +43,7 @@
         
         // Image
         UIImageView * imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"star"]];
-        int centerX = (blockVertical.frame.size.width - imageView.image.size.width)/2;
-        imageView.center = CGPointMake(centerX, 0);
-        [blockVertical addSubview:imageView withPadding:10];
+        [blockVertical addSubview:imageView withPadding:10 andHorizontalAlignment:KALayoutHorizontalAlignmentCenter];
         
         // Label
         UILabel * labelV2 = [[UILabel alloc] init];
@@ -65,7 +62,7 @@
             UITextView * textH1 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,145,0)];
             [textH1 setBackgroundColor:[UIColor clearColor]];
             textH1.text = @"Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
-            [blockHorizontal addSubview:textH1 withPadding:0];
+            [blockHorizontal addSubview:textH1];
             
             UITextView * textH2 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,145,0)];
             [textH2 setBackgroundColor:[UIColor clearColor]];
@@ -80,7 +77,8 @@
             // TextViews
             UITextView * textH3 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
             textH3.text = @"Iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
-            [blockHorizontal addSubview:textH3 withPadding:0];
+            textH3.backgroundColor = [UIColor redColor];
+            [blockHorizontal addSubview:textH3 withPadding:0 andVerticalAlignment:KALayoutVerticalAlignmentCenter];
             
             UITextView * textH4 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
             textH4.text = @"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque laudantium, totam inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";

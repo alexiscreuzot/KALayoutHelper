@@ -15,7 +15,6 @@
 
 @implementation UIVerticalLayout
 
-
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
@@ -30,8 +29,17 @@
     contentBlock();
 }
 
+- (void)addSubview:(UIView *)view{
+    [self addSubview:view withPadding:0 andHorizontalAlignment:KALayoutHorizontalAlignmentLeft];
+}
+
 - (void)addSubview:(UIView *)view withPadding:(int)padding
 {    
+    [self addSubview:view withPadding:padding andHorizontalAlignment:KALayoutHorizontalAlignmentLeft];
+}
+
+- (void)addSubview:(UIView *)view withPadding:(int)padding andHorizontalAlignment:(KALayoutHorizontalAlignment)horizontalAlignement
+{
     // Let labels take as much line as they need
     if ([view isKindOfClass:[UILabel class]]){
         UILabel * label = (UILabel *) view;
@@ -51,20 +59,37 @@
     }
     
     // Add view to layout with given padding
- 
     CGRect frame = view.frame;
     frame.origin.y = curY + padding;
     if(view.frame.size.width == 0){
         frame.size.width = self.frame.size.width;
     }
+    
+    // Manage view horizontalAlignement
+    float spaceLeft = self.frame.size.width - view.frame.size.width;
+    switch (horizontalAlignement) {
+        case KALayoutHorizontalAlignmentLeft:
+            frame.origin.x = 0;
+            break;
+        case KALayoutHorizontalAlignmentCenter:
+            frame.origin.x = spaceLeft/2;
+            break;
+        case KALayoutHorizontalAlignmentRight:
+            frame.origin.x = spaceLeft;
+            break;
+            
+        default:
+            break;
+    }
+    
     view.frame = frame;
     
+    // Size to fit on labels and textviews
     if([view isKindOfClass:[UILabel class]] ||
        [view isKindOfClass:[UITextView class]]){
         [view sizeToFit];
     }
-
-
+    
     [super addSubview:view];
     curY += (view.frame.size.height + padding);
     
@@ -73,6 +98,7 @@
     frame.size.height = curY;
     self.frame = frame;
 }
+
 
 
 -(int) bottom
