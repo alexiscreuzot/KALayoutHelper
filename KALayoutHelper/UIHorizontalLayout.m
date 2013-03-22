@@ -1,9 +1,8 @@
 //
 //  UIHorizontalLayout.m
-//  loireavelo
 //
 //  Created by Alexis Creuzot on 26/09/12.
-//  Copyright (c) 2012 Mobizel. All rights reserved.
+//  Copyright (c) 2012 Alexis Creuzot. All rights reserved.
 //
 
 #import "UIHorizontalLayout.h"
