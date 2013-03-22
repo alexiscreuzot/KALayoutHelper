@@ -29,12 +29,12 @@
 }
 
 - (void)addSubview:(UIView *)view{
-    [self addSubview:view withPadding:0 andHorizontalAlignment:KALayoutHorizontalAlignmentLeft];
+    [self addSubview:view withPadding:0 andHorizontalAlignment:KALayoutHorizontalAlignmentNone];
 }
 
 - (void)addSubview:(UIView *)view withPadding:(int)padding
 {    
-    [self addSubview:view withPadding:padding andHorizontalAlignment:KALayoutHorizontalAlignmentLeft];
+    [self addSubview:view withPadding:padding andHorizontalAlignment:KALayoutHorizontalAlignmentNone];
 }
 
 - (void)addSubview:(UIView *)view withPadding:(int)padding andHorizontalAlignment:(KALayoutHorizontalAlignment)horizontalAlignement
