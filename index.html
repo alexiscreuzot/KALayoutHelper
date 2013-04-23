@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Kalayouthelper by kirualex</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1>Kalayouthelper</h1>
+          <h2>Allowing to add a subview relatively to previously added subviews (either vertically or horizontally)</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/kirualex/KALayoutHelper/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/kirualex/KALayoutHelper/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/kirualex/KALayoutHelper" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          <h1>KALAyoutHelper (formerly iOS Layout Helper)</h1>
+
+<p>A work in progress aiming to add a layout mecanism (similar to android) to views in iOS. It's handy when you want to display a lot of data inside a scrollview for instance, without having to do all the frames adjustments based on the previous elements positions.
+2 layout helpers are available : UIVerticalLayout and UIHorizontalLayout.
+In the last version you can put the content of a layout inside a block to have a better view of your layouts from within your code (it has no other purpose).</p>
+
+<h2>How to install</h2>
+
+<p>Simply copy :</p>
+
+<ul>
+<li>KALayoutHelper.h</li>
+<li>UIVerticalLayout.h</li>
+<li>UIVerticalLayout.m</li>
+<li>UIHorizontalLayout.h</li>
+<li>UIHorizontalLayout.m</li>
+</ul><p>into your project folder and import KALayoutHelper.h</p>
+
+<p>or use cocoapod with this line :
+    pod 'KALayoutHelper', :git =&gt; '<a href="https://github.com/kirualex/KALayoutHelper.git">https://github.com/kirualex/KALayoutHelper.git</a>'</p>
+
+<h2>How to use a vertical layout</h2>
+
+<h3>Code</h3>
+
+<div class="highlight"><pre><span class="n">__block</span> <span class="n">UIVerticalLayout</span> <span class="o">*</span> <span class="n">blockVertical</span> <span class="o">=</span> <span class="n">verticalLayout</span><span class="p">;</span>
+<span class="p">[</span><span class="n">verticalLayout</span> <span class="n">setContentBlock</span><span class="o">:^</span><span class="p">{</span>
+
+    <span class="c1">// Label</span>
+    <span class="n">UILabel</span> <span class="o">*</span> <span class="n">labelV</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UILabel</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+    <span class="n">labelV</span><span class="p">.</span><span class="n">font</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIFont</span> <span class="n">boldSystemFontOfSize</span><span class="o">:</span><span class="mi">18</span><span class="p">];</span>
+    <span class="n">labelV</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Verticaly"</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">labelV</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">20</span><span class="p">];</span>
+
+    <span class="c1">// TextViews</span>
+    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textV1</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+    <span class="n">textV1</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores?"</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textV1</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+
+    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textV2</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+    <span class="n">textV2</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium !"</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textV2</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+
+    <span class="c1">// Images</span>
+    <span class="n">UIImageView</span> <span class="o">*</span> <span class="n">imageView1</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIImageView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithImage</span><span class="o">:</span><span class="p">[</span><span class="n">UIImage</span> <span class="n">imageNamed</span><span class="o">:</span><span class="s">@"star"</span><span class="p">]];</span>
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">imageView1</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span> <span class="n">andHorizontalAlignment</span><span class="o">:</span><span class="n">KALayoutHorizontalAlignmentLeft</span><span class="p">];</span>
+
+    <span class="n">UIImageView</span> <span class="o">*</span> <span class="n">imageView2</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIImageView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithImage</span><span class="o">:</span><span class="p">[</span><span class="n">UIImage</span> <span class="n">imageNamed</span><span class="o">:</span><span class="s">@"star"</span><span class="p">]];</span>
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">imageView2</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span> <span class="n">andHorizontalAlignment</span><span class="o">:</span><span class="n">KALayoutHorizontalAlignmentCenter</span><span class="p">];</span>
+
+    <span class="n">UIImageView</span> <span class="o">*</span> <span class="n">imageView3</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIImageView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithImage</span><span class="o">:</span><span class="p">[</span><span class="n">UIImage</span> <span class="n">imageNamed</span><span class="o">:</span><span class="s">@"star"</span><span class="p">]];</span>
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">imageView3</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span> <span class="n">andHorizontalAlignment</span><span class="o">:</span><span class="n">KALayoutHorizontalAlignmentRight</span><span class="p">];</span>
+
+    <span class="c1">// Label</span>
+    <span class="n">UILabel</span> <span class="o">*</span> <span class="n">labelV2</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UILabel</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+    <span class="n">labelV2</span><span class="p">.</span><span class="n">font</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIFont</span> <span class="n">boldSystemFontOfSize</span><span class="o">:</span><span class="mi">18</span><span class="p">];</span>
+    <span class="n">labelV2</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Horizontaly"</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">labelV2</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+
+    <span class="c1">// HORIZONTAL ------------------------------------------------------------------------------</span>
+    <span class="c1">// Init horizontal layout (frame will be set automatically)</span>
+    <span class="c1">// You just need to set the correct sizes for subview width</span>
+    <span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">horizontalLayout</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIHorizontalLayout</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">horizontalLayout</span> <span class="n">setBackgroundColor</span><span class="o">:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">colorWithWhite</span><span class="o">:</span><span class="mf">0.9</span> <span class="n">alpha</span><span class="o">:</span><span class="mi">1</span><span class="p">]];</span>
+    <span class="n">__block</span> <span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">blockHorizontal</span> <span class="o">=</span> <span class="n">horizontalLayout</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">horizontalLayout</span> <span class="n">setContentBlock</span><span class="o">:^</span><span class="p">{</span>
+        <span class="c1">// TextViews</span>
+        <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH1</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">145</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
+        <span class="p">[</span><span class="n">textH1</span> <span class="n">setBackgroundColor</span><span class="o">:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">clearColor</span><span class="p">]];</span>
+        <span class="n">textH1</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veriticabo."</span><span class="p">;</span>
+        <span class="p">[</span><span class="n">blockHorizontal</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH1</span><span class="p">];</span>
+
+        <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH2</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">145</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
+        <span class="p">[</span><span class="n">textH2</span> <span class="n">setBackgroundColor</span><span class="o">:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">clearColor</span><span class="p">]];</span>
+        <span class="n">textH2</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium atae vitae dicta sunt explicabo."</span><span class="p">;</span>
+        <span class="p">[</span><span class="n">blockHorizontal</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH2</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+    <span class="p">}];</span>
+
+    <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">horizontalLayout</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+<span class="p">}];</span>
+</pre></div>
+
+<h3>Result</h3>
+
+<p><img src="http://i.imgur.com/7Hnedoa.png" alt="Result"></p>
+
+<h2>How to use an horizontal layout</h2>
+
+<h3>Code</h3>
+
+<div class="highlight"><pre><span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">horizontalLayout2</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIHorizontalLayout</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
+<span class="n">__block</span> <span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">blockHorizontal2</span> <span class="o">=</span> <span class="n">horizontalLayout2</span><span class="p">;</span>
+<span class="p">[</span><span class="n">horizontalLayout2</span> <span class="n">setContentBlock</span><span class="o">:^</span><span class="p">{</span>
+    <span class="c1">// TextViews</span>
+    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH3</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
+    <span class="n">textH3</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</span><span class="p">;</span>
+    <span class="n">textH3</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="n">redColor</span><span class="p">];</span>
+    <span class="p">[</span><span class="n">blockHorizontal2</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH3</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">0</span> <span class="n">andVerticalAlignment</span><span class="o">:</span><span class="n">KALayoutVerticalAlignmentCenter</span><span class="p">];</span>
+
+    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH4</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
+    <span class="n">textH4</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque o."</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">blockHorizontal2</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH4</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+
+    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH5</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
+    <span class="n">textH5</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque laudantium, totam."</span><span class="p">;</span>
+    <span class="p">[</span><span class="n">blockHorizontal2</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH5</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
+<span class="p">}];</span>
+</pre></div>
+
+<h3>Result</h3>
+
+<p><img src="http://i.imgur.com/miTj3kO.png" alt="Result"></p>
+        </section>
+
+        <footer>
+          Kalayouthelper is maintained by <a href="https://github.com/kirualex">kirualex</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
