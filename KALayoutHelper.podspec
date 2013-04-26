@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
   s.description = 'KALayoutHelper by kirualex.'
 
   s.source_files = 'KALayoutHelper/*.{h,m}'
-  s.clean_paths  = 'Demo'
   s.framework    = 'Foundation'
 end
