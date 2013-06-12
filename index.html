@@ -7,7 +7,6 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,27 +15,28 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">Kalayouthelper</h1>
-        <p class="header">Allowing to add a subview relatively to previously added subviews (either vertically or horizontally)</p>
+        <h1>Kalayouthelper</h1>
+        <p>Allowing to add a subview relatively to previously added subviews (either vertically or horizontally)</p>
+
+        <p class="view"><a href="https://github.com/kirualex/KALayoutHelper">View the Project on GitHub <small>kirualex/KALayoutHelper</small></a></p>
+
 
         <ul>
-          <li class="download"><a class="buttons" href="https://github.com/kirualex/KALayoutHelper/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/kirualex/KALayoutHelper/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/kirualex/KALayoutHelper">View On GitHub</a></li>
+          <li><a href="https://github.com/kirualex/KALayoutHelper/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/kirualex/KALayoutHelper/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/kirualex/KALayoutHelper">View On <strong>GitHub</strong></a></li>
         </ul>
-
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/kirualex">kirualex</a></p>
-
-
       </header>
       <section>
-        <h1>KALAyoutHelper (formerly iOS Layout Helper)</h1>
+        <h1>
+<a name="kalayouthelper-formerly-ios-layout-helper" class="anchor" href="#kalayouthelper-formerly-ios-layout-helper"><span class="octicon octicon-link"></span></a>KALAyoutHelper (formerly iOS Layout Helper)</h1>
 
 <p>A work in progress aiming to add a layout mecanism (similar to android) to views in iOS. It's handy when you want to display a lot of data inside a scrollview for instance, without having to do all the frames adjustments based on the previous elements positions.
 2 layout helpers are available : UIVerticalLayout and UIHorizontalLayout.
 In the last version you can put the content of a layout inside a block to have a better view of your layouts from within your code (it has no other purpose).</p>
 
-<h2>How to install</h2>
+<h2>
+<a name="how-to-install" class="anchor" href="#how-to-install"><span class="octicon octicon-link"></span></a>How to install</h2>
 
 <p>Simply copy :</p>
 
@@ -51,9 +51,11 @@ In the last version you can put the content of a layout inside a block to have a
 <p>or use cocoapod with this line :
     pod 'KALayoutHelper', :git =&gt; '<a href="https://github.com/kirualex/KALayoutHelper.git">https://github.com/kirualex/KALayoutHelper.git</a>'</p>
 
-<h2>How to use a vertical layout</h2>
+<h2>
+<a name="how-to-use-a-vertical-layout" class="anchor" href="#how-to-use-a-vertical-layout"><span class="octicon octicon-link"></span></a>How to use a vertical layout</h2>
 
-<h3>Code</h3>
+<h3>
+<a name="code" class="anchor" href="#code"><span class="octicon octicon-link"></span></a>Code</h3>
 
 <div class="highlight"><pre><span class="n">__block</span> <span class="n">UIVerticalLayout</span> <span class="o">*</span> <span class="n">blockVertical</span> <span class="o">=</span> <span class="n">verticalLayout</span><span class="p">;</span>
 <span class="p">[</span><span class="n">verticalLayout</span> <span class="n">setContentBlock</span><span class="o">:^</span><span class="p">{</span>
@@ -112,13 +114,16 @@ In the last version you can put the content of a layout inside a block to have a
 <span class="p">}];</span>
 </pre></div>
 
-<h3>Result</h3>
+<h3>
+<a name="result" class="anchor" href="#result"><span class="octicon octicon-link"></span></a>Result</h3>
 
 <p><img src="http://i.imgur.com/7Hnedoa.png" alt="Result"></p>
 
-<h2>How to use an horizontal layout</h2>
+<h2>
+<a name="how-to-use-an-horizontal-layout" class="anchor" href="#how-to-use-an-horizontal-layout"><span class="octicon octicon-link"></span></a>How to use an horizontal layout</h2>
 
-<h3>Code</h3>
+<h3>
+<a name="code-1" class="anchor" href="#code-1"><span class="octicon octicon-link"></span></a>Code</h3>
 
 <div class="highlight"><pre><span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">horizontalLayout2</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIHorizontalLayout</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
 <span class="n">__block</span> <span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">blockHorizontal2</span> <span class="o">=</span> <span class="n">horizontalLayout2</span><span class="p">;</span>
@@ -139,15 +144,17 @@ In the last version you can put the content of a layout inside a block to have a
 <span class="p">}];</span>
 </pre></div>
 
-<h3>Result</h3>
+<h3>
+<a name="result-1" class="anchor" href="#result-1"><span class="octicon octicon-link"></span></a>Result</h3>
 
 <p><img src="http://i.imgur.com/miTj3kO.png" alt="Result"></p>
       </section>
       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+        <p>This project is maintained by <a href="https://github.com/kirualex">kirualex</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
