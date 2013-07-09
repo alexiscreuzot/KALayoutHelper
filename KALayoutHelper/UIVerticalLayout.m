@@ -51,10 +51,21 @@
 {
     // Let labels take as much line as they need
     if ([view isKindOfClass:[UILabel class]]){
+        [super addSubview:view];
         UILabel * label = (UILabel *) view;
         label.numberOfLines = 0;
+        CGSize maximumLabelSize = CGSizeMake(label.frame.size.width,9999);
+        
+        CGSize expectedLabelSize = [label.text sizeWithFont:label.font
+                                          constrainedToSize:maximumLabelSize
+                                              lineBreakMode:label.lineBreakMode];
+        CGRect tframe = label.frame;
+        tframe.size.height = expectedLabelSize.height;
+        label.frame = tframe;
+        
+        [view removeFromSuperview];
     }
-    
+        
     // Textview
     if ([view isKindOfClass:[UITextView class]]){
         // We need to add it to the superview in order to know its content size
@@ -64,6 +75,8 @@
         tframe.size.height = textView.contentSize.height;
         textView.frame = tframe;
         textView.editable= NO;
+        NSLog(@"text : %@", textView.text);
+        NSLog(@"size : %f,%f", tframe.size.width, tframe.size.height);
         [textView removeFromSuperview];
     }
     

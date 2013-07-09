@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B4326C98-A01A-4DD9-9C8B-465CA5927DD0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>KALayoutHelper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F914C91C-1AB6-4A12-86D4-1CEBE5A489D3</key>
+		<string>ssh://github.com/kirualex/KALayoutHelper.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>KALayoutHelper.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F914C91C-1AB6-4A12-86D4-1CEBE5A489D3</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/kirualex/KALayoutHelper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F914C91C-1AB6-4A12-86D4-1CEBE5A489D3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F914C91C-1AB6-4A12-86D4-1CEBE5A489D3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>KALayoutHelper</string>
+		</dict>
+	</array>
+</dict>
+</plist>
