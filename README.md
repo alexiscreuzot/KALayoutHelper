@@ -6,6 +6,8 @@ In the last version you can put the content of a layout inside a block to have a
 
 ##Install
 
+###Normal Install
+
 Simply copy :
  * KALayoutHelper.h
  * UIVerticalLayout.h
@@ -15,8 +17,10 @@ Simply copy :
 
 into your project folder and import KALayoutHelper.h
 
-or use [cocoapods](http://cocoapods.org) with this line :
-    pod 'KALayoutHelper'
+###Using [cocoapods](http://cocoapods.org)
+
+add this line to your Podfile :
+`pod 'KALayoutHelper'
 
 ##Usage
 
