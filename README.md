@@ -20,7 +20,7 @@ into your project folder and import KALayoutHelper.h
 ###Using [cocoapods](http://cocoapods.org)
 
 add this line to your Podfile :
-`pod 'KALayoutHelper'`
+```pod 'KALayoutHelper'```
 
 ##Usage
 
