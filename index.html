@@ -36,7 +36,10 @@
 In the last version you can put the content of a layout inside a block to have a better view of your layouts from within your code (it has no other purpose).</p>
 
 <h2>
-<a name="how-to-install" class="anchor" href="#how-to-install"><span class="octicon octicon-link"></span></a>How to install</h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<h3>
+<a name="normal-install" class="anchor" href="#normal-install"><span class="octicon octicon-link"></span></a>Normal Install</h3>
 
 <p>Simply copy :</p>
 
@@ -48,16 +51,18 @@ In the last version you can put the content of a layout inside a block to have a
 <li>UIHorizontalLayout.m</li>
 </ul><p>into your project folder and import KALayoutHelper.h</p>
 
-<p>or use cocoapod with this line :
-    pod 'KALayoutHelper', :git =&gt; '<a href="https://github.com/kirualex/KALayoutHelper.git">https://github.com/kirualex/KALayoutHelper.git</a>'</p>
+<h3>
+<a name="using-cocoapods" class="anchor" href="#using-cocoapods"><span class="octicon octicon-link"></span></a>Using <a href="http://cocoapods.org">cocoapods</a>
+</h3>
+
+<p>add this line to your Podfile :
+<code>pod 'KALayoutHelper'</code></p>
 
 <h2>
-<a name="how-to-use-a-vertical-layout" class="anchor" href="#how-to-use-a-vertical-layout"><span class="octicon octicon-link"></span></a>How to use a vertical layout</h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<h3>
-<a name="code" class="anchor" href="#code"><span class="octicon octicon-link"></span></a>Code</h3>
-
-<div class="highlight"><pre><span class="n">__block</span> <span class="n">UIVerticalLayout</span> <span class="o">*</span> <span class="n">blockVertical</span> <span class="o">=</span> <span class="n">verticalLayout</span><span class="p">;</span>
+<div class="highlight"><pre><span class="c1">// VERTICAL </span>
+<span class="n">__block</span> <span class="n">UIVerticalLayout</span> <span class="o">*</span> <span class="n">blockVertical</span> <span class="o">=</span> <span class="n">verticalLayout</span><span class="p">;</span>
 <span class="p">[</span><span class="n">verticalLayout</span> <span class="n">setContentBlock</span><span class="o">:^</span><span class="p">{</span>
 
     <span class="c1">// Label</span>
@@ -91,9 +96,7 @@ In the last version you can put the content of a layout inside a block to have a
     <span class="n">labelV2</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Horizontaly"</span><span class="p">;</span>
     <span class="p">[</span><span class="n">blockVertical</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">labelV2</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
 
-    <span class="c1">// HORIZONTAL ------------------------------------------------------------------------------</span>
-    <span class="c1">// Init horizontal layout (frame will be set automatically)</span>
-    <span class="c1">// You just need to set the correct sizes for subview width</span>
+    <span class="c1">// HORIZONTAL </span>
     <span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">horizontalLayout</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIHorizontalLayout</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
     <span class="p">[</span><span class="n">horizontalLayout</span> <span class="n">setBackgroundColor</span><span class="o">:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">colorWithWhite</span><span class="o">:</span><span class="mf">0.9</span> <span class="n">alpha</span><span class="o">:</span><span class="mi">1</span><span class="p">]];</span>
     <span class="n">__block</span> <span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">blockHorizontal</span> <span class="o">=</span> <span class="n">horizontalLayout</span><span class="p">;</span>
@@ -114,40 +117,10 @@ In the last version you can put the content of a layout inside a block to have a
 <span class="p">}];</span>
 </pre></div>
 
-<h3>
-<a name="result" class="anchor" href="#result"><span class="octicon octicon-link"></span></a>Result</h3>
+<h2>
+<a name="result" class="anchor" href="#result"><span class="octicon octicon-link"></span></a>Result</h2>
 
 <p><img src="http://i.imgur.com/7Hnedoa.png" alt="Result"></p>
-
-<h2>
-<a name="how-to-use-an-horizontal-layout" class="anchor" href="#how-to-use-an-horizontal-layout"><span class="octicon octicon-link"></span></a>How to use an horizontal layout</h2>
-
-<h3>
-<a name="code-1" class="anchor" href="#code-1"><span class="octicon octicon-link"></span></a>Code</h3>
-
-<div class="highlight"><pre><span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">horizontalLayout2</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIHorizontalLayout</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">init</span><span class="p">];</span>
-<span class="n">__block</span> <span class="n">UIHorizontalLayout</span> <span class="o">*</span> <span class="n">blockHorizontal2</span> <span class="o">=</span> <span class="n">horizontalLayout2</span><span class="p">;</span>
-<span class="p">[</span><span class="n">horizontalLayout2</span> <span class="n">setContentBlock</span><span class="o">:^</span><span class="p">{</span>
-    <span class="c1">// TextViews</span>
-    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH3</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
-    <span class="n">textH3</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."</span><span class="p">;</span>
-    <span class="n">textH3</span><span class="p">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="p">[</span><span class="n">UIColor</span> <span class="n">redColor</span><span class="p">];</span>
-    <span class="p">[</span><span class="n">blockHorizontal2</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH3</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">0</span> <span class="n">andVerticalAlignment</span><span class="o">:</span><span class="n">KALayoutVerticalAlignmentCenter</span><span class="p">];</span>
-
-    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH4</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
-    <span class="n">textH4</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque o."</span><span class="p">;</span>
-    <span class="p">[</span><span class="n">blockHorizontal2</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH4</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
-
-    <span class="n">UITextView</span> <span class="o">*</span> <span class="n">textH5</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UITextView</span> <span class="n">alloc</span><span class="p">]</span> <span class="n">initWithFrame</span><span class="o">:</span><span class="n">CGRectMake</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">93</span><span class="p">,</span><span class="mi">0</span><span class="p">)];</span>
-    <span class="n">textH5</span><span class="p">.</span><span class="n">text</span> <span class="o">=</span> <span class="s">@"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque laudantium, totam."</span><span class="p">;</span>
-    <span class="p">[</span><span class="n">blockHorizontal2</span> <span class="n">addSubview</span><span class="o">:</span><span class="n">textH5</span> <span class="n">withPadding</span><span class="o">:</span><span class="mi">10</span><span class="p">];</span>
-<span class="p">}];</span>
-</pre></div>
-
-<h3>
-<a name="result-1" class="anchor" href="#result-1"><span class="octicon octicon-link"></span></a>Result</h3>
-
-<p><img src="http://i.imgur.com/miTj3kO.png" alt="Result"></p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/kirualex">kirualex</a></p>
