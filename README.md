@@ -24,9 +24,9 @@ add this line to your Podfile :
 
 ##Usage
 
-###Vertical Layout
 
 ``` objective-c
+// VERTICAL 
 __block UIVerticalLayout * blockVertical = verticalLayout;
 [verticalLayout setContentBlock:^{
 
@@ -61,9 +61,7 @@ __block UIVerticalLayout * blockVertical = verticalLayout;
     labelV2.text = @"Horizontaly";
     [blockVertical addSubview:labelV2 withPadding:10];
 
-    // HORIZONTAL ------------------------------------------------------------------------------
-    // Init horizontal layout (frame will be set automatically)
-    // You just need to set the correct sizes for subview width
+    // HORIZONTAL 
     UIHorizontalLayout * horizontalLayout = [[UIHorizontalLayout alloc] init];
     [horizontalLayout setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:1]];
     __block UIHorizontalLayout * blockHorizontal = horizontalLayout;
@@ -85,36 +83,8 @@ __block UIVerticalLayout * blockVertical = verticalLayout;
 ```
 
 
-###Result
+##Result
 
 ![Result](http://i.imgur.com/7Hnedoa.png)
-
-
-###Horizontal Layout
-
-``` objective-c
-UIHorizontalLayout * horizontalLayout2 = [[UIHorizontalLayout alloc] init];
-__block UIHorizontalLayout * blockHorizontal2 = horizontalLayout2;
-[horizontalLayout2 setContentBlock:^{
-    // TextViews
-    UITextView * textH3 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
-    textH3.text = @"Iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.";
-    textH3.backgroundColor = [UIColor redColor];
-    [blockHorizontal2 addSubview:textH3 withPadding:0 andVerticalAlignment:KALayoutVerticalAlignmentCenter];
-
-    UITextView * textH4 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
-    textH4.text = @"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque o.";
-    [blockHorizontal2 addSubview:textH4 withPadding:10];
-
-    UITextView * textH5 = [[UITextView alloc] initWithFrame:CGRectMake(0,0,93,0)];
-    textH5.text = @"Sed ut perspiciatis unde omnis iste accusantium doloremque laudantium, totam rem aperiam natus error sit voluptatem accusantium doloremque laudantium, totam.";
-    [blockHorizontal2 addSubview:textH5 withPadding:10];
-}];
-```
-
-###Result
-
-![Result](http://i.imgur.com/miTj3kO.png)
-
 
 
