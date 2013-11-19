@@ -61,6 +61,7 @@
                                               lineBreakMode:label.lineBreakMode];
         CGRect tframe = label.frame;
         tframe.size.height = expectedLabelSize.height;
+        tframe.size.width = expectedLabelSize.width;
         label.frame = tframe;
         
         [view removeFromSuperview];
