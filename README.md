@@ -82,11 +82,10 @@ __block UIVerticalLayout * blockVertical = verticalLayout;
 }];
 ```
 
-##Support a fellow developer !
-If this code helped you for your project, consider contributing or donating some BTC to `1A37Am7UsJZYdpVGWRiye2v9JBthQrYw9N`
-Thanks !
 ##Result
 
 ![Result](http://i.imgur.com/7Hnedoa.png)
 
-
+##Support a fellow developer !
+If this code helped you for your project, consider contributing or donating some BTC to `1A37Am7UsJZYdpVGWRiye2v9JBthQrYw9N`
+Thanks !
