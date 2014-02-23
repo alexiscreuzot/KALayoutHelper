@@ -1,3 +1,8 @@
+
+***
+Discontinued as of 23-02-2014 in favor of [CSLinearLayoutView](https://github.com/scalessec/CSLinearLayoutView)
+***
+
 #KALAyoutHelper (formerly iOS Layout Helper)
 
 A work in progress aiming to add a layout mecanism (similar to android) to views in iOS. It's handy when you want to display a lot of data inside a scrollview for instance, without having to do all the frames adjustments based on the previous elements positions.
