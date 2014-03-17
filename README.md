@@ -1,4 +1,3 @@
-
 ***
 Discontinued as of 23-02-2014 in favor of [CSLinearLayoutView](https://github.com/scalessec/CSLinearLayoutView)
 ***
@@ -91,6 +90,3 @@ __block UIVerticalLayout * blockVertical = verticalLayout;
 
 ![Result](http://i.imgur.com/7Hnedoa.png)
 
-##Support a fellow developer !
-If this code helped you for your project, consider contributing or donating some BTC to `1A37Am7UsJZYdpVGWRiye2v9JBthQrYw9N`
-Thanks !
